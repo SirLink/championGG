@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "17291243266",
+    "firebase_url": "https://championgg-9cde4.firebaseio.com",
+    "project_id": "championgg-9cde4",
+    "storage_bucket": "championgg-9cde4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17291243266:android:c6be5914f107a4ba",
+        "android_client_info": {
+          "package_name": "com.gg.lol.champion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17291243266-8e21fk0965rqchuu9b7h0otdv978m5g0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gg.lol.champion",
+            "certificate_hash": "f780bb2b49a80ddc64cfc86843d5bb975feab262"
+          }
+        },
+        {
+          "client_id": "17291243266-p9ii3k03eu132bo3u3j71onlen0tb2ck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZwzC3rrNrgvcaOi0Ip0AW6yRBj28ok_M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17291243266-p9ii3k03eu132bo3u3j71onlen0tb2ck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

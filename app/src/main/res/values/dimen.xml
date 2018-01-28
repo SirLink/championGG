@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Margins-->
+    <dimen name="normal_margin_top">20dp</dimen>
+    <dimen name="perfomarcen_margin_sides">20dp</dimen>
+    <dimen name="padding__sides_text_table">5dp</dimen>
+    <dimen name="padding__top_text_table">10dp</dimen>
+    <dimen name="margin_sides_info">10dp</dimen>
+
+    <dimen name="default_text_size">17sp</dimen>
+
+
+    <dimen name="small_profile">37dp</dimen>
+    <dimen name="stats_width">180dp</dimen>
+    <dimen name="item">56dp</dimen>
+    <dimen name="item_semi_large">70dp</dimen>
+    <dimen name="item_large">130dp</dimen>
+    <dimen name="item_large_port">100dp</dimen>
+    <dimen name="item_sum">785dp</dimen>
+
+    <dimen name="title_text">25sp</dimen>
+    <dimen name="rune_margin">20dp</dimen>
+    <dimen name="rune_margin_sec">60dp</dimen>
+
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_large">25sp</dimen>
+    <dimen name="small_profile_large">50dp</dimen>
+
+    <dimen name="skills_large">700dp</dimen>
+
+    <dimen name="margin_sides_info_large">20dp</dimen>
+    <dimen name="rune_margin_large">25dp</dimen>
+    <dimen name="rune_large">35dp</dimen>
+
+</resources>

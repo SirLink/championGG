@@ -1,0 +1,1563 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sirlink.championgg.Fragments.InfoFragment"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/statsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/normal_margin_top"
+                    android:text="@string/stats"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/perfomarcen_margin_sides"
+                    android:layout_marginRight="@dimen/perfomarcen_margin_sides"
+                    android:layout_marginTop="@dimen/normal_margin_top"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/stat_winrate"
+                        style="@style/TextViewInfo"
+                        android:layout_width="@dimen/stats_width"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_large"
+                        android:text="@string/win_rates_stat" />
+
+                    <TextView
+                        android:id="@+id/stat_winrateNumber"
+                        style="@style/TextViewInfo"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/text_large"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/perfomarcen_margin_sides"
+                    android:layout_marginRight="@dimen/perfomarcen_margin_sides"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/stat_playrate"
+                        style="@style/TextViewInfo"
+                        android:layout_width="@dimen/stats_width"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_large"
+                        android:text="@string/play_rates_stat" />
+
+                    <TextView
+                        android:id="@+id/stat_playrateNumber"
+                        style="@style/TextViewInfo"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/text_large"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/perfomarcen_margin_sides"
+                    android:layout_marginRight="@dimen/perfomarcen_margin_sides"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/stat_banrate"
+                        style="@style/TextViewInfo"
+                        android:layout_width="@dimen/stats_width"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_large"
+                        android:text="@string/ban_rates_stat" />
+
+                    <TextView
+                        android:id="@+id/stat_banrateNumber"
+                        style="@style/TextViewInfo"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/text_large"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="@dimen/normal_margin_top">
+
+                <TextView
+                    android:id="@+id/recommended_builds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/recommend_builds"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_large" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/normal_margin_top">
+
+                    <TextView
+                        android:id="@+id/most_frequent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/normal_margin_top"
+                        android:text="@string/most_frequent"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/most_frequent_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/normal_margin_top"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/text_large" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_sides_info_large"
+                        android:layout_marginRight="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="@dimen/normal_margin_top"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/item_1_"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_2_"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_3_"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_4_"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_5_"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_6_"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:background="@drawable/border" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/item_sum"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/summoner_1_win"
+                                android:layout_width="@dimen/item_large"
+                                android:layout_height="@dimen/item_large"
+                                android:layout_marginRight="1dp"
+                                android:background="@drawable/border" />
+
+                            <ImageView
+                                android:id="@+id/summoner_2_win"
+                                android:layout_width="@dimen/item_large"
+                                android:layout_height="@dimen/item_large"
+                                android:background="@drawable/border" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/starting_1_win"
+                                android:layout_width="@dimen/item_large"
+                                android:layout_height="@dimen/item_large"
+                                android:layout_marginRight="1dp"
+                                android:background="@drawable/border" />
+
+                            <ImageView
+                                android:id="@+id/starting_2_win"
+                                android:layout_width="@dimen/item_large"
+                                android:layout_height="@dimen/item_large"
+                                android:background="@drawable/border" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/highest_win"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/normal_margin_top"
+                        android:text="@string/highest_win"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/highest_win_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/normal_margin_top"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/text_large" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_sides_info_large"
+                        android:layout_marginRight="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="@dimen/normal_margin_top"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/item_1"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_2"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_3"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_4"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_5"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/border" />
+
+                        <ImageView
+                            android:id="@+id/item_6"
+                            android:layout_width="@dimen/item_large"
+                            android:layout_height="@dimen/item_large"
+                            android:background="@drawable/border" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/item_sum"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/summoner_1_high"
+                                android:layout_width="@dimen/item_large"
+                                android:layout_height="@dimen/item_large"
+                                android:layout_marginRight="1dp"
+                                android:background="@drawable/border" />
+
+                            <ImageView
+                                android:id="@+id/summoner_2_high"
+                                android:layout_width="@dimen/item_large"
+                                android:layout_height="@dimen/item_large"
+                                android:background="@drawable/border" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/starting_1_high"
+                                android:layout_width="@dimen/item_large"
+                                android:layout_height="@dimen/item_large"
+                                android:layout_marginRight="1dp"
+                                android:background="@drawable/border" />
+
+                            <ImageView
+                                android:id="@+id/starting_2_high"
+                                android:layout_width="@dimen/item_large"
+                                android:layout_height="@dimen/item_large"
+                                android:background="@drawable/border" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/skill_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/skills"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_large" />
+
+                <TableLayout
+                    android:layout_width="@dimen/skills_large"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_sides_info_large"
+                    android:layout_marginLeft="@dimen/margin_sides_info_large"
+                    android:divider="@android:color/black"
+                    android:showDividers="middle"
+                    android:layout_gravity="center_horizontal">
+
+                    <TableRow
+                        android:id="@+id/q_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:text="Q"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/white"
+                            android:paddingLeft="2dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/skill_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="1"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="2"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="3"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="4"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="5"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="6"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="7"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="8"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="9"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="10"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="11"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="12"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="13"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="14"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="15"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="16"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="17"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILL"
+                            android:text="18"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/w_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="2dp"
+                            android:text="W"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/skill_1w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="1"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_2w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="2"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_3w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="3"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_4w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="4"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_5w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="5"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_6w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="6"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_7w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="7"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_8w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="8"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_9w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="9"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_10w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="10"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_11w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="11"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_12w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="12"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_13w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="13"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_14w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="14"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_15w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="15"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_16w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="16"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_17w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="17"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_18w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLW"
+                            android:text="18"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/e_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="2dp"
+                            android:text="E"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/skill_1e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="1"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_2e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="2"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_3e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="3"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_4e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="4"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_5e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="5"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_6e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="6"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_7e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="7"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_8e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="8"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_9e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="9"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_10e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="10"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_11e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="11"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_12e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="12"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_13e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="13"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_14e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="14"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_15e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="15"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_16e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="16"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_17e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="17"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_18e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLE"
+                            android:text="18"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/r_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="2dp"
+                            android:text="R"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/skill_1r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="1"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_2r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="2"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_3r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="3"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_4r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="4"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_5r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="5"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_6r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="6"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_7r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="7"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_8r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="8"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_9r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="9"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_10r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="10"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_11r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="11"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_12r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="12"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_13r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="13"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_14r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="14"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_15r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="15"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_16r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="16"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_17r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="17"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/skill_18r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/gold"
+                            android:paddingLeft="5dp"
+                            android:tag="SKILLR"
+                            android:text="18"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible" />
+
+
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/runes"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_large"
+                    android:layout_gravity="center_horizontal"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_sides_info"
+                    android:layout_marginRight="@dimen/margin_sides_info"
+                    android:background="@drawable/border_runes">
+
+                    <!--PRIMARY PATH-->
+
+                    <ImageView
+                        android:id="@+id/primary_path"
+                        android:layout_width="70dp"
+                        android:layout_height="400dp"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginStart="56dp"
+                        android:layout_marginTop="@dimen/margin_sides_info_large"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/primary_path" />
+
+                    <ImageView
+                        android:id="@+id/primary_element"
+                        android:layout_width="@dimen/rune_large"
+                        android:layout_height="@dimen/rune_large"
+                        android:layout_alignLeft="@id/primary_path"
+                        android:layout_alignRight="@id/primary_path"
+                        android:layout_marginTop="@dimen/rune_large" />
+
+                    <ImageView
+                        android:id="@+id/primary_keystone"
+                        android:layout_width="@dimen/rune_large"
+                        android:layout_height="@dimen/rune_large"
+                        android:layout_alignLeft="@id/primary_path"
+                        android:layout_alignRight="@id/primary_path"
+                        android:layout_below="@id/primary_element"
+                        android:layout_marginTop="67dp" />
+
+                    <ImageView
+                        android:id="@+id/primary_greater_rune"
+                        android:layout_width="@dimen/rune_large"
+                        android:layout_height="@dimen/rune_large"
+                        android:layout_below="@id/primary_keystone"
+                        android:layout_marginTop="57dp"
+                        android:layout_alignLeft="@id/primary_path"
+                        android:layout_alignRight="@id/primary_path" />
+
+                    <ImageView
+                        android:id="@+id/primary_rune_one"
+                        android:layout_width="@dimen/rune_large"
+                        android:layout_height="@dimen/rune_large"
+                        android:layout_below="@id/primary_greater_rune"
+                        android:layout_marginTop="43dp"
+                        android:layout_alignLeft="@id/primary_path"
+                        android:layout_alignRight="@id/primary_path" />
+
+
+                    <ImageView
+                        android:id="@+id/primary_rune_two"
+                        android:layout_width="@dimen/rune_large"
+                        android:layout_height="@dimen/rune_large"
+                        android:layout_below="@id/primary_rune_one"
+                        android:layout_marginTop="43dp"
+                        android:layout_alignLeft="@id/primary_path"
+                        android:layout_alignRight="@id/primary_path" />
+
+                    <TextView
+                        android:id="@+id/primary_element_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/primary_path"
+                        android:text="placeholder"
+                        android:textSize="@dimen/text_large"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="30dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/primary_keystone_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/primary_path"
+                        android:layout_below="@id/primary_element_name"
+                        android:text="placeholder"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_large"
+                        android:layout_marginLeft="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="80dp"
+                        />
+                    <TextView
+                        android:id="@+id/primary_greater_rune_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/primary_path"
+                        android:textSize="@dimen/text_large"
+                        android:layout_below="@id/primary_keystone_name"
+                        android:text="placeholder"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="63dp"
+                        />
+                    <TextView
+                        android:id="@+id/primary_rune_one_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/primary_path"
+                        android:layout_below="@id/primary_greater_rune_name"
+                        android:text="placeholder"
+                        android:textSize="@dimen/text_large"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="45dp"
+                        />
+                    <TextView
+                        android:id="@+id/primary_rune_two_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/primary_path"
+                        android:layout_below="@id/primary_rune_one_name"
+                        android:text="placeholder"
+                        android:textSize="@dimen/text_large"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="40dp" />
+
+                    <!--PRIMARY PATH-->
+
+                    <!--SECONDARY PATH-->
+
+                    <ImageView
+                        android:id="@+id/secondary_path"
+                        android:layout_width="70dp"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="@dimen/margin_sides_info_large"
+                        android:layout_marginRight="450dp"
+                        android:layout_marginTop="@dimen/margin_sides_info_large"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/secondary_path" />
+
+                    <ImageView
+                        android:id="@+id/secondary_element"
+                        android:layout_width="@dimen/rune_large"
+                        android:layout_height="@dimen/rune_large"
+                        android:layout_toLeftOf="@+id/secondary_element_name"
+                        android:layout_marginRight="317dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginBottom="@dimen/rune_large"/>
+
+
+                    <ImageView
+                        android:id="@+id/secondary_rune_one"
+                        android:layout_width="@dimen/rune_large"
+                        android:layout_height="@dimen/rune_large"
+                        android:layout_toLeftOf="@+id/secondary_element_name"
+                        android:layout_below="@id/secondary_element"
+                        android:layout_marginBottom="@dimen/rune_large"
+                        android:layout_marginRight="317dp"
+                        android:layout_marginTop="45dp" />
+
+                    <ImageView
+                        android:id="@+id/secondary_rune_two"
+                        android:layout_width="@dimen/rune_large"
+                        android:layout_height="@dimen/rune_large"
+                        android:layout_toLeftOf="@+id/secondary_element_name"
+                        android:layout_below="@id/secondary_rune_one"
+                        android:layout_marginRight="317dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="@dimen/rune_large"/>
+
+                    <TextView
+                        android:id="@+id/secondary_element_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="placeholder"
+                        android:textSize="@dimen/text_large"
+                        android:textColor="@android:color/white"
+                        android:layout_marginRight="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="50dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/secondary_rune_one_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/secondary_element_name"
+                        android:text="placeholder"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_large"
+                        android:layout_marginRight="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="90dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/secondary_rune_two_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/secondary_rune_one_name"
+                        android:text="placeholder"
+                        android:textSize="@dimen/text_large"
+                        android:textColor="@android:color/white"
+                        android:layout_marginRight="@dimen/margin_sides_info_large"
+                        android:layout_marginTop="65dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

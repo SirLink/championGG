@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SearchStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Background for the search query section (e.g. EditText) -->
+        <item name="queryBackground">@color/colorPrimary</item>
+        <!-- Background for the actions section (e.g. voice, submit) -->
+        <item name="submitBackground">@color/colorAccent</item>
+    </style>
+
+    <style name="TextViewPerformanceV">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">@dimen/padding__sides_text_table</item>
+        <item name="android:paddingRight">@dimen/padding__sides_text_table</item>
+        <item name="android:paddingTop">@dimen/padding__top_text_table</item>
+        <item name="android:paddingBottom">@dimen/padding__top_text_table</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextViewPerformance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">@dimen/padding__sides_text_table</item>
+        <item name="android:paddingRight">@dimen/padding__sides_text_table</item>
+        <item name="android:paddingTop">@dimen/padding__top_text_table</item>
+        <item name="android:paddingBottom">@dimen/padding__top_text_table</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextViewInfo">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">@dimen/padding__sides_text_table</item>
+        <item name="android:paddingRight">@dimen/padding__sides_text_table</item>
+        <item name="android:paddingTop">@dimen/padding__top_text_table</item>
+        <item name="android:paddingBottom">@dimen/padding__top_text_table</item>
+    </style>
+
+    <style name="viewPagerTitleStrip">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="tabTitleStrip" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="viewPagerTitleStripSmall">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+</resources>

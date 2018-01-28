@@ -1,0 +1,655 @@
+[
+  {
+    "id": 8126,
+    "name": "Cheap Shot",
+    "nameEs": "Golpe Bajo",
+    "namePr": "Golpe Desleal",
+    "iconPath": "domination_cheap_shot"
+  },
+  {
+    "id": 8415,
+    "name": "The Arcane Colossus",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "domination"
+  },
+  {
+    "id": 8017,
+    "name": "Cut Down",
+    "nameEs": "Corte",
+    "namePr": "Dilacerar",
+    "iconPath": "precision_giantslayer"
+  },
+  {
+    "id": 8139,
+    "name": "Taste of Blood",
+    "nameEs": "Sabor a sangre",
+    "namePr": "Gosto de Sangue",
+    "iconPath": "domination_taste"
+  },
+  {
+    "id": 8005,
+    "name": "Press the Attack",
+    "nameEs": "Estrategia Ofensiva",
+    "namePr": "Pressione o Ataque",
+    "iconPath": "precision_pressthreeattacks"
+
+  },
+  {
+    "id": 8021,
+    "name": "Fleet Footwork",
+    "nameEs": "Sobre la Marcha",
+    "namePr": "Agilidade nos Pés",
+    "iconPath": "precision_fleetfootwork"
+  },
+  {
+    "id": 8243,
+    "name": "The Ultimate Hat",
+    "nameEs": "El sombrero definitivo",
+    "namePr": "O Chapéu Mítico",
+    "iconPath": "sorcery_ultimate_hat"
+  },
+  {
+    "id": 8316,
+    "name": "Minion Dematerializer",
+    "nameEs": "Desmaterializador de Súbditos",
+    "namePr": "Pulverizador de Tropas",
+    "iconPath": "inspiration_minion_dematerializer"
+
+  },
+  {
+    "id": 8004,
+    "name": "The Brazen Perfect",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "precision"
+  },
+  {
+    "id": 9104,
+    "name": "Legend: Alacrity",
+    "nameEs": "Leyenda: Celeridad",
+    "namePr": "Lenda: Espontaneidade",
+    "iconPath": "precision_legend_alacrity"
+  },
+  {
+    "id": 8220,
+    "name": "The Calamity",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "domination"
+  },
+  {
+    "id": 8016,
+    "name": "The Merciless Elite",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "domination"
+  },
+  {
+    "id": 8439,
+    "name": "Aftershock",
+    "nameEs": "Réplica",
+    "namePr": "Pós-choque",
+    "iconPath": "resolve_aftershock"
+
+  },
+  {
+    "id": 8345,
+    "name": "Biscuit Delivery",
+    "nameEs": "Entrega de galletas",
+    "namePr": "Entrega de Biscoitos",
+    "iconPath": "inspiration_biscuit"
+
+  },
+  {
+    "id": 8008,
+    "name": "Lethal Tempo",
+    "nameEs": "Cadencia Letal",
+    "namePr": "Ritmo Fatal",
+    "iconPath": "precision_letaltempo"
+
+  },
+  {
+    "id": 8128,
+    "name": "Dark Harvest",
+    "nameEs": "Cosecha oscura",
+    "namePr": "Colheita Sombria",
+    "iconPath": "domination_dark"
+
+  },
+  {
+    "id": 8347,
+    "name": "Cosmic Insight",
+    "nameEs": "Perspicacia cósmica",
+    "namePr": "Perspicácia Cósmica",
+    "iconPath": "inspiration_cosmic"
+  },
+  {
+    "id": 8410,
+    "name": "Approach Velocity",
+    "nameEs": "Velocidad de Aproximación",
+    "namePr": "Velocidade de Aproximação",
+    "iconPath": "inspiration_approach_velocity_rune"
+
+  },
+  {
+    "id": 8210,
+    "name": "Transcendence",
+    "nameEs": "Trascendencia",
+    "namePr": "Transcendência",
+    "iconPath": "sorcery_transcendence"
+
+  },
+  {
+    "id": 8313,
+    "name": "Perfect Timing",
+    "nameEs": "Momento oportuno",
+    "namePr": "MOMENTO CERTO",
+    "iconPath": "inspiration_perfect_timing"
+
+  },
+  {
+    "id": 8234,
+    "name": "Celerity",
+    "nameEs": "Celeridad",
+    "namePr": "Celeridade",
+    "iconPath": "sorcery_celerity"
+
+  },
+  {
+    "id": 9105,
+    "name": "Legend: Tenacity",
+    "nameEs": "Leyenda: Tenacidad",
+    "namePr": "Lenda: Tenacidade",
+    "iconPath": "precision_legend_tenacity"
+
+  },
+  {
+    "id": 8429,
+    "name": "Conditioning",
+    "nameEs": "Acondicionamiento",
+    "namePr": "Condicionamento",
+    "iconPath": "resolve_conditioning"
+
+  },
+  {
+    "id": 8214,
+    "name": "Summon Aery",
+    "nameEs": "Invocación: Aery",
+    "namePr": "Invocar Aery",
+    "iconPath": "sorcery_summon_aery"
+
+  },
+  {
+    "id": 8435,
+    "name": "Mirror Shell",
+    "nameEs": "Coraza Reflejante",
+    "namePr": "Casco Duplicado",
+    "iconPath": "resolve_mirror_shell"
+
+  },
+  {
+    "id": 8115,
+    "name": "The Aether Blade",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "sorcery"
+  },
+  {
+    "id": 8229,
+    "name": "Arcane Comet",
+    "nameEs": "Cometa arcano",
+    "namePr": "Cometa Arcano",
+    "iconPath": "sorcery_arcane_comet"
+
+  },
+  {
+    "id": 8135,
+    "name": "Ravenous Hunter",
+    "nameEs": "Cazador voraz",
+    "namePr": "Caça Voraz",
+    "iconPath": "domination_hunter"
+
+  },
+  {
+    "id": 8224,
+    "name": "Nullifying Orb",
+    "nameEs": "Orbe de Anulación",
+    "namePr": "Orbe Anulador",
+    "iconPath": "sorcery_nullifying_orb"
+
+  },
+  {
+    "id": 8465,
+    "name": "Guardian",
+    "nameEs": "Guardián",
+    "namePr": "Guardião",
+    "iconPath": "resolve_guardian"
+
+  },
+  {
+    "id": 8451,
+    "name": "Overgrowth",
+    "nameEs": "Crecimiento Excesivo",
+    "namePr": "Crescimento excessivo",
+    "iconPath": "resolve_overgrowth"
+
+  },
+  {
+    "id": 8454,
+    "name": "The Leviathan",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "resolve"
+  },
+  {
+    "id": 8138,
+    "name": "Eyeball Collection",
+    "nameEs": "Coleccion de ojos",
+    "namePr": "Globos Oculares",
+    "iconPath": "domination_eyeball"
+
+  },
+  {
+    "id": 8207,
+    "name": "The Cryptic",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "sorcery"
+  },
+  {
+    "id": 8230,
+    "name": "Phase Rush",
+    "nameEs": "Fase Veloz",
+    "namePr": "Ímpeto Gradual",
+    "iconPath": "sorcery_phase"
+
+  },
+  {
+    "id": 8109,
+    "name": "The Ingenious Hunter",
+    "nameEs": "Cazador ingenioso",
+    "namePr": "Caça Ardilosa",
+    "iconPath": "domination"
+  },
+  {
+    "id": 8105,
+    "name": "Relentless Hunter",
+    "nameEs": "Cazador Implacable",
+    "namePr": "Caça Incansável",
+    "iconPath": "domination_relentless"
+
+  },
+  {
+    "id": 8453,
+    "name": "Revitalize",
+    "nameEs": "Revitalizar",
+    "namePr": "Revitalizar",
+    "iconPath": "resolve_revitalize"
+
+  },
+  {
+    "id": 8232,
+    "name": "Waterwalking",
+    "nameEs": "Caminata Sobre Agua",
+    "namePr": "Caminhar sobre as Águas",
+    "iconPath": "sorcery_waterwalking"
+
+  },
+  {
+    "id": 8414,
+    "name": "The Imperious Behemoth",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "resolve"
+  },
+  {
+    "id": 8320,
+    "name": "The Timeless",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "inspiration"
+  },
+  {
+    "id": 9111,
+    "name": "Triumph",
+    "nameEs": "Triunfo",
+    "namePr": "Triunfo",
+    "iconPath": "precision_triumph"
+
+  },
+  {
+    "id": 8233,
+    "name": "Absolute Focus",
+    "nameEs": "Concentración absoluta",
+    "namePr": "Foco Absoluto",
+    "iconPath": "sorcery_absolute_focus"
+
+  },
+  {
+    "id": 8319,
+    "name": "The Stargazer",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "inspiration"
+  },
+  {
+    "id": 8009,
+    "name": "Presence of Mind",
+    "nameEs": "Concentración Profunda",
+    "namePr": "Presença de Espírito",
+    "iconPath": "precision_presence"
+
+  },
+  {
+    "id": 8143,
+    "name": "Sudden Impact",
+    "nameEs": "Impacto Súbito",
+    "namePr": "Impacto Repentino",
+    "iconPath": "domination_sudden"
+
+  },
+  {
+    "id": 9103,
+    "name": "Legend: Bloodline",
+    "nameEs": "Leyenda: Linaje",
+    "namePr": "Lenda: Linhagem",
+    "iconPath": "precision_bloodline"
+
+  },
+  {
+    "id": 8014,
+    "name": "Coup de Grace",
+    "nameEs": "Golpe de gracia",
+    "namePr": "Golpe de Misericórdia",
+    "iconPath": "precision_coupdegrace"
+
+  },
+  {
+    "id": 8237,
+    "name": "Scorch",
+    "nameEs": "Quemadura",
+    "namePr": "Chamuscar",
+    "iconPath": "sorcery_scorch"
+
+  },
+  {
+    "id": 8446,
+    "name": "Demolish",
+    "nameEs": "Demolición",
+    "namePr": "Demolir",
+    "iconPath": "resolve_demolish"
+  },
+  {
+    "id": 8226,
+    "name": "Manaflow Band",
+    "nameEs": "Anillo de Flujo de Maná",
+    "namePr": "Faixa de Fluxo de Mana",
+    "iconPath": "sorcery_manaflow"
+
+  },
+  {
+    "id": 8114,
+    "name": "The Immortal Butcher",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "domination"
+  },
+  {
+    "id": 8437,
+    "name": "Grasp of the Undying",
+    "nameEs": "Aliento del Agónico",
+    "namePr": "Aperto dos Mortos-Vivos",
+    "iconPath": "resolve_grasp"
+  },
+  {
+    "id": 8112,
+    "name": "Electrocute",
+    "nameEs": "Electrocutar",
+    "namePr": "Eletrocutar",
+    "iconPath": "domination_electrocute"
+
+  },
+  {
+    "id": 8318,
+    "name": "The Ruthless Visionary",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "inspiration"
+  },
+  {
+    "id": 8124,
+    "name": "Predator",
+    "nameEs": "Depredador",
+    "namePr": "Predador",
+    "iconPath": "domination_predator"
+
+  },
+  {
+    "id": 8359,
+    "name": "Kleptomancy",
+    "nameEs": "Cleptomancia",
+    "namePr": "Cleptomancia",
+    "iconPath": "inspiration_kleptomancy"
+
+  },
+  {
+    "id": 8134,
+    "name": "Ingenious Hunter",
+    "nameEs": "Cazador ingenioso",
+    "namePr": "Caça Ardilosa",
+    "iconPath": "domination_ingenious"
+
+  },
+  {
+    "id": 7000,
+    "name": "Template",
+    "tooltip": "",
+    "shortDesc": "",
+    "longDesc": "",
+    "iconPath": "/lol-game-data/assets/v1/perk-images/Template/7000.png",
+    "endOfGameStatDescs": []
+  },
+  
+  {
+    "id": 8304,
+    "name": "Magical Footwear",
+    "nameEs": "Calzado mágico",
+    "namePr": "Calçados Mágicos",
+    "iconPath": "inspiration_magicalfootwear"
+
+  },
+  {
+    "id": 8351,
+    "name": "Glacial Augment",
+    "nameEs": "Aumento Glacial",
+    "namePr": "Aprimoramento Glacial",
+    "iconPath": "inspiration_glacialaugment"
+
+  },
+  {
+    "id": 8339,
+    "name": "Celestial Body",
+    "nameEs": "Cuerpo Celestial",
+    "namePr": "Corpo Celestial",
+    "iconPath": "isnpiration_celestial"
+
+  },
+  {
+    "id": 8006,
+    "name": "The Eternal Champion",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "precision"
+  },
+  {
+    "id": 8416,
+    "name": "The Enlightened Titan",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "resolve"
+  },
+  {
+    "id": 8120,
+    "name": "Ghost Poro",
+    "nameEs": "Poro fantasma",
+    "namePr": "Poro Fantasma",
+    "iconPath": "domination_poro"
+
+  },
+  {
+    "id": 8242,
+    "name": "Unflinching",
+    "nameEs": "Inquebrantable",
+    "namePr": "Inabalável",
+    "iconPath": "resolve_unflinching_rune"
+
+  },
+  {
+    "id": 8127,
+    "name": "The Glorious Executioner",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "domination"
+  },
+  {
+    "id": 8299,
+    "name": "Last Stand",
+    "nameEs": "La Última Batalla",
+    "namePr": "Até a Morte",
+    "iconPath": "precision_last_stand_rune"
+
+  },
+  {
+    "id": 8444,
+    "name": "Second Wind",
+    "nameEs": "Segundo Aire",
+    "namePr": "Ventos Revigorantes",
+    "iconPath": "resolve_secondwind"
+  },
+  {
+    "id": 8463,
+    "name": "Font of Life",
+    "nameEs": "Fuente de vida",
+    "namePr": "Fonte da Vida",
+    "iconPath": "resolve_font_of_life"
+
+  },
+  {
+    "id": 8205,
+    "name": "The Incontestable Spellslinger",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "sorcery"
+  },
+  {
+    "id": 8236,
+    "name": "Gathering Storm",
+    "nameEs": "Tormenta Creciente",
+    "namePr": "Tempestade Crescente",
+    "iconPath": "sorcery_gathering"
+
+  },
+  {
+    "id": 8007,
+    "name": "The Savant",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "precision"
+  },
+  {
+    "id": 8136,
+    "name": "Zombie Ward",
+    "nameEs": "Centinela Zombi",
+    "namePr": "Sentinela Zumbi",
+    "iconPath": "domination_zombieward"
+
+  },
+  {
+    "id": 8430,
+    "name": "Iron Skin",
+    "nameEs": "Piel de hierro",
+    "namePr": "Pele de Aço",
+    "iconPath": "resolve_iron_skin"
+
+  },
+  {
+    "id": 8208,
+    "name": "The Ancient One",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "sorcery"
+  },
+  {
+    "id": 8321,
+    "name": "Future's Market",
+    "nameEs": "Mercado del futuro",
+    "namePr": "Mercado do Futuro",
+    "iconPath": "inspiration_future_market"
+  },
+  {
+    "id": 8344,
+    "name": "The Virtuoso",
+    "nameEs": "",
+    "namePr": "",
+    "iconPath": "inspiration"
+  },
+  {
+    "id": 8306,
+    "name": "Hextech Flashtraption",
+    "nameEs": "Destello hextech",
+    "namePr": "Flashtração Hextec",
+    "iconPath": "inspiration_hexflash"
+
+  },
+  {
+    "id": 9101,
+    "name": "Overheal",
+    "nameEs": "Sobrecuración",
+    "namePr": "Cura Excessiva",
+    "iconPath": "precision_overheal"
+
+  },
+  {
+    "id": 8326,
+    "name": "Unsealed Spellbook",
+    "nameEs": "Libro de hechizos",
+    "namePr": "Livro de Feitiços",
+    "iconPath": "inspiration_spellbook"
+  },
+  {
+    "id": 8200,
+    "name": "Sorcery",
+    "nameEs": "Brujería",
+    "namePr": "Feitiçaria",
+    "iconPath": "sorcery"
+  },
+  {
+    "id": 8100,
+    "name": "Domination",
+    "nameEs": "Dominación",
+    "namePr": "Dominação",
+    "iconPath": "domination"
+  },
+  {
+    "id": 8000,
+    "name": "Precision",
+    "nameEs": "Precisión",
+    "namePr": "Precisão",
+    "iconPath": "precision"
+  },
+  {
+    "id": 8400,
+    "name": "Resolve",
+    "nameEs": "Valor",
+    "namePr": "Determinação",
+    "iconPath": "resolve"
+  },
+  {
+    "id": 8300,
+    "name": "Inspiration",
+    "nameEs": "Inspiración",
+    "namePr": "Inspiração",
+    "iconPath": "inspiration"
+  }
+]

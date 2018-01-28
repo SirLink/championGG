@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Champion GG</string>
+
+    <string name="top_champions">Mejores campeones</string>
+    <string name="main_menu">Home</string>
+    <string name="win_rates">Ratio de Victorias</string>
+    <string name="overall_perfomance">Rendimiento global</string>
+    <string name="top_lane">Superior</string>
+    <string name="jg_lane">Jungla</string>
+    <string name="mid_lane">Central</string>
+    <string name="bot_lane">Inferior</string>
+    <string name="support_lane">Soporte</string>
+    <string name="role_text">Rol</string>
+    <string name="champion_text">Campeón</string>
+    <string name="fail">Error al cargar los datos</string>
+    <string name="action_reload">Recargar</string>
+    <string name="stats">Estadisticas</string>
+    <string name="win_rates_stat">Ratio de victorias:</string>
+    <string name="play_rates_stat">Ratio de partidas jugadas:</string>
+    <string name="ban_rates_stat">Ratio de baneos:</string>
+    <string name="kills">Asesinatos:</string>
+    <string name="deads_stat">Muertes:</string>
+    <string name="assists_stat">Asistencias:</string>
+    <string name="recommend_builds">Builds recomendadas</string>
+    <string name="highest_win">Mayor ratio de victorias</string>
+    <string name="most_frequent">Mas frecuente</string>
+    <string name="skills">Habilidades</string>
+    <string name="runes">Runas</string>
+    <string name="transitionname_picture">picture_explode</string>
+    <string name="search">Buscar</string>
+
+</resources>

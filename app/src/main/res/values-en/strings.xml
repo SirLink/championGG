@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Champion GG</string>
+
+    <string name="top_champions">Best champions</string>
+    <string name="main_menu">Home</string>
+    <string name="win_rates">Win rates</string>
+    <string name="overall_perfomance">Overall performance ranking</string>
+    <string name="top_lane">Top lane</string>
+    <string name="jg_lane">Jungle</string>
+    <string name="mid_lane">Mid lane</string>
+    <string name="bot_lane">Bot lane</string>
+    <string name="support_lane">Support</string>
+    <string name="role_text">Role</string>
+    <string name="champion_text">Champion</string>
+    <string name="fail">Connection error</string>
+    <string name="action_reload">Reload</string>
+    <string name="stats">Statistics</string>
+    <string name="win_rates_stat">Win rate:</string>
+    <string name="play_rates_stat">Play rate:</string>
+    <string name="ban_rates_stat">Ban rate:</string>
+    <string name="kills">Kills:</string>
+    <string name="deads_stat">Deads:</string>
+    <string name="assists_stat">Assists:</string>
+    <string name="recommend_builds">Recommended builds</string>
+    <string name="highest_win">Highest win rate</string>
+    <string name="most_frequent">Most Frequent</string>
+    <string name="skills">Skills</string>
+    <string name="runes">Runes</string>
+    <string name="transitionname_picture">picture_explode</string>
+    <string name="search">Search</string>
+
+</resources>
